@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+body, p, a, li, span, div {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+h1 {
+    display: flex;
+    font-size: 2.5em;
+    margin: 0%;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+body{
+    background-color: #0c192c;
+}
+.Logo{
+   height: 50px;
+   width: 50px; 
+}
+.carousel-slide{
+    width: 100%;
+}
+#barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0c192c ;
+    height: 65px;
+}
+#buscador{
+    background-color:#c3b477 ;
+    color: black;
+}
+#contenedor{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contenedorJuegos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+
+.game-row{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+  
+.card {
+    background-color: #112542;   
+    color: #d1e5dc;
+    width: 350px;
+    height: 360px;
+
+}
+.card img {
+    object-fit: cover;
+    width: 2fr;
+    height: 2fr;
+}
+
+.slide{
+    width: 60%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.menu {
+    margin-right: auto;
+  }
+
+.title {
+    color: #d1e5dc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+

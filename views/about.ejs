@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main.css">
+	<title>Animación al Scrollear</title>
+</head>
+<body>
+    <header class="p-3 text-bg" id="barra">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" class="menu">
+              <li><a href="/" class="nav-link px-2 text-secondary">Inicio</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Destacados</a></li>
+              <li><a href="#Ofertas" class="nav-link px-2 text-white">Ofertas</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Noticias</a></li>
+              <li><a href="/about" class="nav-link px-2 text-white">Sobre Nosotros</a></li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark " placeholder="Buscar" aria-label="Search" id="buscador">
+            </form>
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Iniciar Sesión</button>
+              <button type="button" class="btn btn-warning">Registrase</button>
+            </div>
+          </div>
+        </div>
+        <span class="indicador" id="indicador">  </span>
+      
+      </header>
+	<div class="hero">
+		<h1>Sobre Nosotros</h1>
+	</div>
+	<div class="container">
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="/img/logoTitan.jpg" alt="">
+			</div>
+			<h3 class="fecha">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo purus quam, et posuere elit dignissim sed. Nullam aliquet sit amet nisi sit amet interdum. Aliquam nibh dui, pharetra eu dui nec, pulvinar sagittis mi. Nullam eleifend sodales arcu, eu aliquam est lobortis sed. Cras eu varius mauris. Sed a tempor enim. Vivamus luctus, libero eu lobortis efficitur, quam velit rhoncus arcu, quis aliquam ante nisl in ex. Vivamus aliquam semper efficitur. Curabitur mattis dui in arcu dictum, et fringilla purus maximus. Praesent at tortor non risus dapibus vehicula eget id augue. In tincidunt tellus libero, id dignissim ante finibus sed. Etiam vestibulum maximus lacus et mattis. Mauris a nulla ac augue porta semper sed eu nulla. Aliquam a quam nec nibh sodales lobortis. Proin in elit at tortor fringilla pharetra vitae nec magna.</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-down">
+				<img src="/img/EldenRing.jpg" alt="">
+			</div>
+			<h3 class="fecha">Nullam eget enim vel erat accumsan consectetur. Suspendisse aliquet, massa a tincidunt porttitor, sem dui rhoncus eros, vehicula pellentesque eros odio ac velit. Fusce sed nulla ultrices, sollicitudin nisl fringilla, semper arcu. Mauris maximus magna ipsum, id sollicitudin dui molestie nec.</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-left">
+				<img src="/img/EldenRing2.jpg" alt="">
+			</div>
+			<h3 class="fecha">Donec a libero tortor. Morbi nec sem laoreet, facilisis mauris quis, condimentum velit. Integer vulputate ultrices imperdiet. Proin eget metus egestas, accumsan nunc vestibulum, rhoncus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac quam tincidunt magna elementum venenatis a nec nibh. Maecenas rutrum tempus erat, aliquam egestas purus. </h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-right">
+				<img src="/img/EldenRing3.jpg" alt="">
+			</div>
+			<h3 class="fecha"> Duis diam sapien, egestas vel tortor sed, volutpat rutrum lacus. Aenean convallis odio enim. Etiam nec leo in ante mattis lacinia vel et lacus. Nulla mollis metus quis bibendum condimentum. Cras mollis, tortor vel finibus pulvinar, lectus arcu consequat metus, eu euismod turpis lectus vel est</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="/img/EldenRing4.jpg" alt="">
+			</div>
+			<h3 class="fecha">Morbi fermentum accumsan tellus. Suspendisse sed libero non purus volutpat pretium iaculis eget augue. In in est ut purus interdum vestibulum. </h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up">
+				<img src="/img/EldenRing5.jpg" alt="">
+			</div>
+			<h3 class="fecha"> Sed orci metus, dapibus at lacus nec, eleifend laoreet lacus. Nam venenatis nisl sit amet orci maximus pulvinar. Cras volutpat consequat diam vel sodales. Mauris ut porta lectus.</h3>
+		</div>
+	</div>
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: true
+		});
+	</script>
+</body>
+</html>
