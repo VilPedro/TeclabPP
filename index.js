@@ -19,15 +19,16 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.json())
 
-const fetchGamesByCategoryWithDelay = async (category, pages) => {
+const fetchGames = async (params, pages) => {
   const games = []
   for (const page of pages) {
     try {
-      const response = await axios.get(`${baseUrl}?key=${apiKey}&genres=${category}&ordering=+rating&page_size=16&page=${page}`)
+      const url = `${baseUrl}?key=${apiKey}&${params}&page_size=16&page=${page}`
+      const response = await axios.get(url)
       games.push(...response.data.results)
       await new Promise(resolve => setTimeout(resolve, delay))
     } catch (error) {
-      console.error(`Error fetching ${category} games:`, error)
+      console.error('Error fetching games:', error)
     }
   }
   return games
@@ -35,20 +36,45 @@ const fetchGamesByCategoryWithDelay = async (category, pages) => {
 
 app.get('/', async (req, res) => {
   try {
-    const actionGames = await fetchGamesByCategoryWithDelay('action', [1, 2, 3])
-    const adventureGames = await fetchGamesByCategoryWithDelay('adventure', [1, 2, 3])
-    const racingGames = await fetchGamesByCategoryWithDelay('racing', [1, 2, 3])
-
+    const actionGames = await fetchGames('genres=action&ordering=+rating', [1, 2, 3])
+    const adventureGames = await fetchGames('genres=adventure&ordering=+rating', [1, 2, 3])
+    const racingGames = await fetchGames('genres=racing&ordering=+rating', [1, 2, 3])
     res.render('index', { actionGames, adventureGames, racingGames, error: null })
   } catch (err) {
     console.error('Error:', err)
-    res.render('index', { actionGames: [], adventureGames: [], error: 'Error al obtener datos de los juegos' })
+    res.render('index', { actionGames: [], adventureGames: [], racingGames: [], error: 'Error al obtener datos de los juegos' })
   }
 })
 
 app.get('/about', async (req, res) => {
   res.render('about')
 })
+
+app.get('/games', async (req, res) => {
+  const { genre, platform, releaseYear, tags } = req.query
+  try {
+    let params = 'ordering=-rating'
+    if (genre) {
+      params += `&genres=${genre}`
+    }
+    if (platform) {
+      params += `&platforms=${platform}`
+    }
+    if (releaseYear) {
+      params += `&dates=${releaseYear}-01-01,${releaseYear}-12-31`
+    }
+    if (tags) {
+      params += `&tags=${tags}`
+    }
+
+    const games = await fetchGames(params, [1, 2, 3, 4, 5])
+    res.render('games', { games, genre, platform, releaseYear, tags, error: null })
+  } catch (err) {
+    console.error('Error:', err)
+    res.render('games', { games: [], genre, platform, releaseYear, tags, error: 'Error al obtener datos de los juegos' })
+  }
+})
+
 app.listen(port, () => {
   console.log(`Server running on port: ${port}`)
 })
