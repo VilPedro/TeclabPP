@@ -213,7 +213,6 @@ body {
     background-color: #FFF8E8;
     color: #0c192c;
     overflow-x: hidden;
-
   }
 
   .logo-link, .title-link {
@@ -281,7 +280,14 @@ body {
     color: #c3b477;
 }
 
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.card a:hover {
+  text-decoration: none; 
+}
 .nav .nav-item .nav-link {
     color: #0c192c;
 }
@@ -369,7 +375,7 @@ body {
 .custom-card {
   display: flex;
   flex-direction: column;
-  height: 400px; 
+  height:310px; 
   width: 100%;
   max-width: 275px; 
 }
@@ -445,12 +451,6 @@ body {
     padding: 15px 0;
   }
 
-  #cardGenres {
-    width: 250px;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-  }
   
   .card-genre {
     width: 100%;
@@ -477,6 +477,7 @@ body {
 
 .card {
     transition: all 0.3s;
+    position: relative;
 }
 .card:hover{
     transform: scale(1.09);
@@ -493,8 +494,8 @@ body {
 .custom-card-genres{
   display: flex;
   flex-direction: column;
-  height: 200px; 
-  width: 200px; 
+  height: 250px; 
+  width: 220px; 
   margin: 0.5rem;
   background-color: #F9DBBA;
 }
@@ -521,6 +522,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  .custom-card-genres a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; 
+    color: inherit;
+  }
+  .custom-card-genres a {
+    padding: 0;
+    margin: 0;
+  }
 
   label {
     display: block;
@@ -666,3 +678,177 @@ body {
   border-radius: 4px;
   margin-bottom: 5px; 
 }
+
+
+
+
+
+
+
+
+
+/* GameDetails */
+.body-details {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff7e8;
+  color: #333;
+}
+
+.game-details-container-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-header-details {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.game-background-details {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.background-overlay-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.game-title-container-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.game-title-details {
+  color: #ced4da;
+  font-size: 3em;
+  margin: 0;
+}
+
+.game-release-date-details {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+
+.game-main-content-details {
+  margin-top: 20px;
+}
+
+.game-video-details {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.game-video-details video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.game-description-details {
+  margin: 20px 0;
+}
+
+.game-description-details h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+
+.game-additional-info-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.game-additional-info-details div {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.game-genres-details ul, .game-platforms-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-genres-details ul li, .game-platforms-details ul li {
+  background-color: #dedede;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.game-rating-details {
+  text-align: center;
+}
+
+.game-rating-details p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* GameDetails */
+/* About */
+.body-about{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #fff7e8;
+  color: #333;
+}
+.about{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #493029;
+}
+
+.video1{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.text1{
+  width: 50%; 
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300; 
+  color: #4a4a4a;
+  font-size: 25px; 
+  line-height: 1.6;
+
+}
+.text2{
+  
+    width: 50%; 
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 200; 
+    color: #383838;
+    font-size: 25px; 
+    line-height: 1.6;
+  
+  }
+
+.video2{
+  height: 333px;
+  width: 600px;
+  border-radius: 10px;
+}
+.container{
+  padding-top: 25px;
+}
+/* About */

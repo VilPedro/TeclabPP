@@ -10,16 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
-	<title>Animación al Scrollear</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<title>Sobre nosotros</title>
 </head>
-<body>
-    <header class="primary-header flex" id="barra">
-        <div class="title ">
+<body class="body-about">
+	<header class="primary-header flex" id="barra">
+        <div class="title">
+          <a href="/" class="logo-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick Logo" viewBox="0 0 16 16">
             <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
             <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
-          </svg>
-          <h1>Titan Games</h1>
+          </svg></a>
+          <a href="/" class="title-link">
+            <h1>Titan Games</h1>
+          </a>   
         </div>
 
         <button class="mobile-nav-toggle"
@@ -29,11 +33,7 @@
 
        <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-          <li class="active">
-            <a class="text-dark" href="/">
-              <span aria-hidden="true"></span>Inicio
-            </a>
-          </li>
+         
           <li>
             <a class="text-dark" href="/games">
             <span aria-hidden="true"></span>Juegos
@@ -45,57 +45,73 @@
           </li>
         </ul>
        </nav> 
- 
   </header>
-	<div class="hero">
-		<h1>Sobre Nosotros</h1>
-	</div>
-	<div class="container">
-		<div class="evento">
-			<div class="foto" data-aos="fade-up">
-				<img src="/img/logoTitan.jpg" alt="">
-			</div>
-			<h3 class="fecha">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo purus quam, et posuere elit dignissim sed. Nullam aliquet sit amet nisi sit amet interdum. Aliquam nibh dui, pharetra eu dui nec, pulvinar sagittis mi. Nullam eleifend sodales arcu, eu aliquam est lobortis sed. Cras eu varius mauris. Sed a tempor enim. Vivamus luctus, libero eu lobortis efficitur, quam velit rhoncus arcu, quis aliquam ante nisl in ex. Vivamus aliquam semper efficitur. Curabitur mattis dui in arcu dictum, et fringilla purus maximus. Praesent at tortor non risus dapibus vehicula eget id augue. In tincidunt tellus libero, id dignissim ante finibus sed. Etiam vestibulum maximus lacus et mattis. Mauris a nulla ac augue porta semper sed eu nulla. Aliquam a quam nec nibh sodales lobortis. Proin in elit at tortor fringilla pharetra vitae nec magna.</h3>
-		</div>
-		<div class="evento">
-			<div class="foto" data-aos="fade-down">
-				<img src="/img/EldenRing.jpg" alt="">
-			</div>
-			<h3 class="fecha">Nullam eget enim vel erat accumsan consectetur. Suspendisse aliquet, massa a tincidunt porttitor, sem dui rhoncus eros, vehicula pellentesque eros odio ac velit. Fusce sed nulla ultrices, sollicitudin nisl fringilla, semper arcu. Mauris maximus magna ipsum, id sollicitudin dui molestie nec.</h3>
-		</div>
-		<div class="evento">
-			<div class="foto" data-aos="fade-left">
-				<img src="/img/EldenRing2.jpg" alt="">
-			</div>
-			<h3 class="fecha">Donec a libero tortor. Morbi nec sem laoreet, facilisis mauris quis, condimentum velit. Integer vulputate ultrices imperdiet. Proin eget metus egestas, accumsan nunc vestibulum, rhoncus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac quam tincidunt magna elementum venenatis a nec nibh. Maecenas rutrum tempus erat, aliquam egestas purus. </h3>
-		</div>
-		<div class="evento">
-			<div class="foto" data-aos="fade-right">
-				<img src="/img/EldenRing3.jpg" alt="">
-			</div>
-			<h3 class="fecha"> Duis diam sapien, egestas vel tortor sed, volutpat rutrum lacus. Aenean convallis odio enim. Etiam nec leo in ante mattis lacinia vel et lacus. Nulla mollis metus quis bibendum condimentum. Cras mollis, tortor vel finibus pulvinar, lectus arcu consequat metus, eu euismod turpis lectus vel est</h3>
-		</div>
-		<div class="evento">
-			<div class="foto" data-aos="fade-up">
-				<img src="/img/EldenRing4.jpg" alt="">
-			</div>
-			<h3 class="fecha">Morbi fermentum accumsan tellus. Suspendisse sed libero non purus volutpat pretium iaculis eget augue. In in est ut purus interdum vestibulum. </h3>
-		</div>
-		<div class="evento">
-			<div class="foto" data-aos="fade-up">
-				<img src="/img/EldenRing5.jpg" alt="">
-			</div>
-			<h3 class="fecha"> Sed orci metus, dapibus at lacus nec, eleifend laoreet lacus. Nam venenatis nisl sit amet orci maximus pulvinar. Cras volutpat consequat diam vel sodales. Mauris ut porta lectus.</h3>
+
+<div class="container">
+	<h3>Sobre Nosotros</h3>
+	<div class="about">	
+		<p class="text1">En nuestra página, encontrarás una amplia base de datos de videojuegos que te permitirá navegar por géneros, plataformas, fechas de lanzamiento y más. Ya sea que estés buscando un clásico de toda la vida o un título de estreno, nuestra plataforma te ofrece todo lo que necesitas saber, desde los detalles más técnicos hasta las opiniones de otros jugadores.</h5>
+		<div data-aos="fade-left">
+				<video class="video1" width="100%" autoplay="" muted="" loop="" playsinline="" poster="">
+					<source src="/video/arcade.mp4" type="video/mp4">
+				</video>
 		</div>
 	</div>
+	<h3 class="fecha">¿Qué hacemos?</h3>			
+	<div class="about">
+		<div data-aos="zoom-out-right">
+			<video class="video1" width="100%" autoplay="" muted="" loop="" playsinline="" poster="">
+				<source src="/video/videogames.mp4" type="video/mp4">
+			</video>
+		</div>
+	<p class="text1">Nos dedicamos a recopilar y mostrar toda la información relevante sobre videojuegos: desde descripciones y detalles técnicos hasta calificaciones de usuarios y expertos. Nuestro objetivo es ofrecer una experiencia intuitiva y útil para que puedas encontrar tu próximo juego favorito con facilidad.</h5>
+	</div>
+	<h3>¿Por qué lo hacemos?</h3>
+	<div class="about">
+		<p class="text2">Creemos que los videojuegos son más que un pasatiempo; son una forma de arte, una vía para contar historias y conectar personas. Nos apasiona la idea de que cada partida ofrece una experiencia única, una oportunidad de sumergirse en mundos fantásticos y vivir aventuras inolvidables.</p>
+		<div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+			<video class="video2" width="100%" autoplay="" muted="" loop="" playsinline="" poster="">
+				<source src="/video/amigosJugando.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+	</div>
+
+		
+	
+</div>
 
 
 
+<div class="container">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+	<div class="col-md-4 d-flex align-items-center">
+	  <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+		<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+	  </a>
+	  <span class="mb-3 mb-md-0 text-body-secondary">© 2024 TitanGames, Inc</span>
+	</div>
 
+	<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+	  <li class="ms-3"><a class="text-body-secondary" href="https://x.com/Steam">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+		  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+		</svg>
+	  </a></li>
+	  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/steam.usd/">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+		  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+		</svg>
+	  </a></li>
+	  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/Steam?locale=es_LA">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+		  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+		</svg>
+	  </a></li>
+	</ul>
+  </footer>
 
-
-
-    
+</div>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

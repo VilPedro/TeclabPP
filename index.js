@@ -75,6 +75,18 @@ app.get('/games', async (req, res) => {
   }
 })
 
+app.get('/games/:id', async (req, res) => {
+  const gameId = req.params.id
+  try {
+    const response = await axios.get(`https://api.rawg.io/api/games/${gameId}?key=${apiKey}`)
+    const gameData = response.data
+    res.render('gameDetails', { game: gameData })
+  } catch (error) {
+    console.error(error)
+    res.status(500).send('Error fetching game data')
+  }
+})
+
 app.listen(port, () => {
   console.log(`Server running on port: ${port}`)
 })
