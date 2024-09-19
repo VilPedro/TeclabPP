@@ -51,9 +51,10 @@ app.get('/about', async (req, res) => {
 })
 
 app.get('/games', async (req, res) => {
-  const { genre, platform, releaseYear, tags } = req.query
+  const { genre, platform, releaseYear, tags, name } = req.query
   try {
     let params = 'ordering=-rating'
+
     if (genre) {
       params += `&genres=${genre}`
     }
@@ -66,12 +67,15 @@ app.get('/games', async (req, res) => {
     if (tags) {
       params += `&tags=${tags}`
     }
+    if (name) {
+      params += `&search=${name}`
+    }
 
-    const games = await fetchGames(params, [1, 2, 3, 4, 5])
-    res.render('games', { games, genre, platform, releaseYear, tags, error: null })
+    const games = await fetchGames(params, [1, 2, 3, 4])
+    res.render('games', { games, genre, platform, releaseYear, tags, name, error: null })
   } catch (err) {
     console.error('Error:', err)
-    res.render('games', { games: [], genre, platform, releaseYear, tags, error: 'Error al obtener datos de los juegos' })
+    res.render('games', { games: [], genre, platform, releaseYear, tags, name, error: 'Error al obtener datos de los juegos' })
   }
 })
 

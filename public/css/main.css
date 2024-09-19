@@ -491,6 +491,46 @@ body {
 
 /* Games genres css */
 
+.search-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 250px;
+  margin: 0 auto; 
+  margin-left: 0px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem; 
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 250px;
+}
+
+.search-input:focus {
+  border-color: #007bff; 
+}
+
+.btn-search {
+  background-color: transparent;
+  border: none;
+  margin-left: -40px; 
+  color: #007bff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.btn-search:hover {
+  color: #0056b3; 
+}
+
+
 .custom-card-genres{
   display: flex;
   flex-direction: column;
@@ -832,14 +872,14 @@ body {
 
 }
 .text2{
-  
-    width: 50%; 
-    margin-right: 20px;
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 200; 
-    color: #383838;
-    font-size: 25px; 
-    line-height: 1.6;
+  width: 50%; 
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300; 
+  color: #4a4a4a;
+  font-size: 25px; 
+  line-height: 1.6;
+  padding-left: 30px;
   
   }
 

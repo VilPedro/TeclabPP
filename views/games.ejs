@@ -59,6 +59,19 @@
   </header>
 
 <h1>Explorá todos los juegos</h1>
+<form id="search-form" class="search-form mb-3" method="GET" action="/games">
+  <input
+    type="text"
+    class="form-control search-input"
+    id="search-input"
+    name="name"
+    placeholder="Buscar juego..."
+    aria-label="Search"
+  />
+  <button type="submit" class="btn btn-search">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
 <div class="container-games mt-4 d-flex flex-row mb-3">
     <div class="col-2 col-md-12"> 
       <h2>Filtros</h2>
@@ -287,6 +300,7 @@
     </div>
   </div>
 </div>
+
 <div class="contenedorJuegos ">
 <div class="col-12 col-md-10">
       <% if (error) { %>
