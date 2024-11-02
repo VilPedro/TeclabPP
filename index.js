@@ -9,7 +9,7 @@ const port = 3000
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const apiKey = 'fcff05fc4cec4cb1a44a5132c43b9065'
+const apiKey = 'API TOKEN
 const baseUrl = 'https://api.rawg.io/api/games'
 const delay = 1000
 
